@@ -1,0 +1,21 @@
+[
+{
+  "modid": "mythic",
+  "name": "Mythic",
+  "description": "MagiTech is a mod that combines Magic and Technology.It is more of a steam-punk mod than anything. ",
+  "version": "0.0.0.0",
+  "url": "http://www.ironhammer354.com/Mythic",
+  "updateUrl": "",
+  "authorList": [
+    "Ironhammer354",
+    "Freezzah"
+  ],
+  "credits": "To all who help Mythic progress.",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
