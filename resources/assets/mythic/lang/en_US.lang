@@ -1,3 +1,8 @@
+itemGroup.mythic=Mythic
+
 tile.mythic:placeHolderBlock.name=Place Holder
 
-item.mythic:placeHolderItem.name=Place Holder
+item.mythic:spellBook.name=Spell Book
+item.mythic:zarfron.name=Zarfron
+item.mythic:aquadite.name=Aquadite
+item.mythic:erieDrop.name=Arcane Drop

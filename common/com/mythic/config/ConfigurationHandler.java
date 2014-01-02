@@ -25,7 +25,10 @@ public class ConfigurationHandler {
 			BlockIDs.placeHolderBlockID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.PLACEHOLDERBLOCK_NAME, BlockIDs.PLACEHOLDERBLOCK_DEFAULT).getInt(BlockIDs.PLACEHOLDERBLOCK_DEFAULT);
 
 
-			ItemIDs.placeHolderItemID = config.getItem(Configuration.CATEGORY_ITEM, Strings.PLACEHOLDERITEM_NAME, ItemIDs.PLACEHOLDERITEM_DEFAULT).getInt(ItemIDs.PLACEHOLDERITEM_DEFAULT);
+			ItemIDs.spellBookID = config.getItem(Configuration.CATEGORY_ITEM, Strings.SPELLBOOK_NAME, ItemIDs.SPELLBOOK_DEFAULT).getInt(ItemIDs.SPELLBOOK_DEFAULT);
+			ItemIDs.zarfronID = config.getItem(Configuration.CATEGORY_ITEM, Strings.ZARFRON_NAME, ItemIDs.ZARFRON_DEFAULT).getInt(ItemIDs.ZARFRON_DEFAULT);
+			ItemIDs.aquaditeID = config.getItem(Configuration.CATEGORY_ITEM, Strings.AQUADITE_NAME, ItemIDs.AQUADITE_DEFAULT).getInt(ItemIDs.AQUADITE_DEFAULT);
+			ItemIDs.erieDropID = config.getItem(Configuration.CATEGORY_ITEM, Strings.ERIEDROP_NAME, ItemIDs.ERIEDROP_DEFAULT).getInt(ItemIDs.ERIEDROP_DEFAULT);
 
 		} catch (Exception e) {
 			FMLLog.log(Level.SEVERE, e, Reference.MOD_ID + " had a problem loading its configuration file.");

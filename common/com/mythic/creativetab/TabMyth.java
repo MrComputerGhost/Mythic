@@ -13,7 +13,7 @@ public class TabMyth extends CreativeTabs {
 
 	public ItemStack getIconItemStack() {
 
-		return new ItemStack(MythItems.placeHolderItem);
+		return new ItemStack(MythItems.spellBook);
 	}
 
 }

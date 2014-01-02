@@ -6,11 +6,17 @@ import com.mythic.lib.ItemIDs;
 
 public class MythItems {
 
-	public static Item placeHolderItem;
+	public static Item spellBook;
+	public static Item zarfron;
+	public static Item aquadite;
+	public static Item erieDrop;
 
 	public static void initItems() {
 
-		placeHolderItem = new ItemPlaceHolderItem(ItemIDs.placeHolderItemID);				
+		spellBook = new SpellBook(ItemIDs.spellBookID);
+		zarfron = new Zarfron(ItemIDs.zarfronID);
+		aquadite = new Aquadite(ItemIDs.aquaditeID);
+		erieDrop = new ErieDrop(ItemIDs.erieDropID);
 
 	}
 
