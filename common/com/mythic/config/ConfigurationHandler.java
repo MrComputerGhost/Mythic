@@ -23,7 +23,9 @@ public class ConfigurationHandler {
 			config.load();
 
 			BlockIDs.placeHolderBlockID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.PLACEHOLDERBLOCK_NAME, BlockIDs.PLACEHOLDERBLOCK_DEFAULT).getInt(BlockIDs.PLACEHOLDERBLOCK_DEFAULT);
-
+			BlockIDs.aquaditeOreID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.AQUADITEORE_NAME, BlockIDs.AQUADITEORE_DEFAULT).getInt(BlockIDs.AQUADITEORE_DEFAULT);
+			BlockIDs.zarfronOreID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.ZARFRONORE_NAME, BlockIDs.ZARFRONORE_DEFAULT).getInt(BlockIDs.ZARFRONORE_DEFAULT);
+			BlockIDs.erieOreID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.ERIEORE_NAME, BlockIDs.ERIEORE_DEFAULT).getInt(BlockIDs.ERIEORE_DEFAULT);
 
 			ItemIDs.spellBookID = config.getItem(Configuration.CATEGORY_ITEM, Strings.SPELLBOOK_NAME, ItemIDs.SPELLBOOK_DEFAULT).getInt(ItemIDs.SPELLBOOK_DEFAULT);
 			ItemIDs.zarfronID = config.getItem(Configuration.CATEGORY_ITEM, Strings.ZARFRON_NAME, ItemIDs.ZARFRON_DEFAULT).getInt(ItemIDs.ZARFRON_DEFAULT);

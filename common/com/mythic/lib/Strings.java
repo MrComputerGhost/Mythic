@@ -5,6 +5,9 @@ public class Strings {
 	public static final String RESOURCE_PREFIX = Reference.MOD_ID.toLowerCase() + ":";
 
 	public static final String PLACEHOLDERBLOCK_NAME = "placeHolderBlock";
+	public static final String AQUADITEORE_NAME = "aquaditeOre";
+	public static final String ZARFRONORE_NAME = "zarfronOre";
+	public static final String ERIEORE_NAME = "erieOre";
 
 	public static final String SPELLBOOK_NAME = "spellBook";
 	public static final String ZARFRON_NAME = "zarfron";

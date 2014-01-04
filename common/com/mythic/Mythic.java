@@ -10,6 +10,7 @@ import com.mythic.core.proxy.CommonProxy;
 import com.mythic.creativetab.TabMyth;
 import com.mythic.item.MythItems;
 import com.mythic.lib.Reference;
+import com.mythic.world.gen.WorldGen;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -39,7 +40,9 @@ public class Mythic {
 
 		MythBlocks.initBlocks();
 
-		MythItems.initItems();}
+		MythItems.initItems();
+		
+		WorldGen.init();}
 
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
