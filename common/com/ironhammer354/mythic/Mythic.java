@@ -24,6 +24,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
+
 public class Mythic {
 
 	@Instance(Reference.MOD_ID)
@@ -38,15 +39,15 @@ public class Mythic {
 	public void preInit(FMLPreInitializationEvent e) {
 
 		ConfigurationHandler.init(new File(e.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.MOD_ID + File.separator + Reference.MOD_ID + ".cfg"));
-
+		
 		MythBlocks.initBlocks();
-
+		
 		MythItems.initItems();
 		
 		WorldGen.init();
 		
 		CraftingManager.addRecipes();
-		}
+	}
 
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
@@ -54,7 +55,9 @@ public class Mythic {
 		proxy.registerRenderThings();
 		
 		addNames();
+		
 		oreRegistration();
+		
 		addOreRecipes();
 	}
 	
@@ -63,7 +66,5 @@ public class Mythic {
 	public static void addOreRecipes(){}
 
 	@EventHandler
-	public void postInit(FMLPostInitializationEvent e) {
-
-	}
+	public void postInit(FMLPostInitializationEvent e) {}
 }

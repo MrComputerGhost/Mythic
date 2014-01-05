@@ -40,5 +40,4 @@ public class ConfigurationHandler {
 			config.save();
 		}
 	}
-
 }

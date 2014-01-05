@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 public class TabMyth extends CreativeTabs {
 
 	public TabMyth(int id, String name) {
+		
 		super(id, name);
 	}
 
@@ -15,5 +16,4 @@ public class TabMyth extends CreativeTabs {
 
 		return new ItemStack(MythItems.spellBook);
 	}
-
 }

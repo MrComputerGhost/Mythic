@@ -13,7 +13,6 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockPlaceHolderBlock extends Block {
 
-
 	@SideOnly(Side.CLIENT)
 	public Icon[] icons;
 
@@ -25,5 +24,4 @@ public class BlockPlaceHolderBlock extends Block {
 		setHardness(3.0F);
 		setResistance(8.0F);
 	}
-
 }

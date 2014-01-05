@@ -16,7 +16,6 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class OreAquadite extends Block {
 
-
 	@SideOnly(Side.CLIENT)
 	public Icon[] icons;
 
@@ -28,11 +27,10 @@ public class OreAquadite extends Block {
 		setHardness(3.0F);
 		setResistance(8.0F);
 	}
+	
 	@Override
-    public int idDropped(int par1, Random par2Random, int par3)
-    {
-          
-                    return MythItems.aquadite.itemID;                
-    }
+	public int idDropped(int par1, Random par2Random, int par3) {
 
+		return MythItems.aquadite.itemID;
+	}
 }

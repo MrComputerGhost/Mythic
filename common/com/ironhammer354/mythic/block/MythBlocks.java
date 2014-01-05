@@ -17,7 +17,6 @@ public class MythBlocks {
 	public static Block zarfronOre;
 	public static Block erieOre;
 
-
 	public static void initBlocks() {
 
 		placeHolderBlock = new BlockPlaceHolderBlock(BlockIDs.placeHolderBlockID);
@@ -25,14 +24,10 @@ public class MythBlocks {
 		zarfronOre = new OreZarfron(BlockIDs.zarfronOreID);
 		erieOre = new OreErie(BlockIDs.erieOreID);
 
-
 		GameRegistry.registerBlock(placeHolderBlock, Strings.PLACEHOLDERBLOCK_NAME);
 		GameRegistry.registerBlock(aquaditeOre, Strings.AQUADITEORE_NAME);
 		GameRegistry.registerBlock(zarfronOre, Strings.ZARFRONORE_NAME);
 		GameRegistry.registerBlock(erieOre, Strings.ERIEORE_NAME);
 
-
-
 	}
-
 }

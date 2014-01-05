@@ -20,10 +20,13 @@ public class WorldGenOres implements IWorldGenerator {
 
 			case -1:
 				generateNether(world, random, chunkX * 16, chunkZ * 16);
+				break;
 			case 0:
 				genereateSurface(world, random, chunkX * 16, chunkZ * 16);
+				break;
 			case 1:
 				generateEnd(world, random, chunkX * 16, chunkZ * 16);
+				break;
 		}
 	}
 
@@ -35,6 +38,7 @@ public class WorldGenOres implements IWorldGenerator {
 		addOreSpawn(MythBlocks.zarfronOre, Block.stone, world, random, x, z, 16, 16, 6 + random.nextInt(5), 10, 0, 100);}
 
 	private void generateEnd(World world, Random random, int x, int z) {
+		
 		addOreSpawn(MythBlocks.erieOre, Block.whiteStone, world, random, x, z, 16, 16, 6 + random.nextInt(5), 10, 0, 100);
 	}
 
@@ -57,5 +61,4 @@ public class WorldGenOres implements IWorldGenerator {
 			(new WorldGenMinable(block.blockID, maxVeinSize, blockBeingReplaced.blockID)).generate(world, random, xPos, yPos, zPos);
 		}
 	}
-
 }

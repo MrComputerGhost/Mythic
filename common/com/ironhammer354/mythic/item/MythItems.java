@@ -19,5 +19,4 @@ public class MythItems {
 		erieDrop = new ErieDrop(ItemIDs.erieDropID);
 
 	}
-
 }
