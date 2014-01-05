@@ -6,6 +6,14 @@ import net.minecraft.world.World;
 
 public class EntityNymph extends EntityMob
 {
+	
+
+    private float heightOffset = 0.5F;
+
+
+    private int heightOffsetUpdateTime;
+    private int field_70846_g;
+    
     public EntityNymph(World par1World)
     {
         super(par1World);
@@ -18,6 +26,7 @@ public class EntityNymph extends EntityMob
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(10.0D);
         this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.20000000298023224D);
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(50.0D);
     }
 
     @Override
