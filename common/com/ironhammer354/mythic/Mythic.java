@@ -8,6 +8,7 @@ import com.ironhammer354.mythic.block.MythBlocks;
 import com.ironhammer354.mythic.config.ConfigurationHandler;
 import com.ironhammer354.mythic.core.proxy.CommonProxy;
 import com.ironhammer354.mythic.creativetab.TabMyth;
+import com.ironhammer354.mythic.entity.mob.EntityNymph;
 import com.ironhammer354.mythic.item.MythItems;
 import com.ironhammer354.mythic.lib.Reference;
 import com.ironhammer354.mythic.recipe.CraftingManager;
@@ -21,6 +22,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.EntityRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
@@ -51,8 +54,12 @@ public class Mythic {
 
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
+
+		 EntityRegistry.registerModEntity(EntityNymph.class, "Nypmh", 0, this, 80, 1, true);           
+	        LanguageRegistry.instance().addStringLocalization("entity.YourMobName.name", "en_US","YourMobName");
 		
 		proxy.registerRenderThings();
+		proxy.registerSound();
 		
 		addNames();
 		
