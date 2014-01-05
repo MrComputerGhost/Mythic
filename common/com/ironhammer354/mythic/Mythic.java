@@ -10,6 +10,7 @@ import com.ironhammer354.mythic.core.proxy.CommonProxy;
 import com.ironhammer354.mythic.creativetab.TabMyth;
 import com.ironhammer354.mythic.item.MythItems;
 import com.ironhammer354.mythic.lib.Reference;
+import com.ironhammer354.mythic.recipe.CraftingManager;
 import com.ironhammer354.mythic.world.gen.WorldGen;
 
 import cpw.mods.fml.common.Mod;
@@ -42,7 +43,10 @@ public class Mythic {
 
 		MythItems.initItems();
 		
-		WorldGen.init();}
+		WorldGen.init();
+		
+		CraftingManager.addRecipes();
+		}
 
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
