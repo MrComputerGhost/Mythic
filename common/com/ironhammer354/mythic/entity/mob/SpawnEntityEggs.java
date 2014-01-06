@@ -10,7 +10,7 @@ public class SpawnEntityEggs {
 
 
 		public static void CreateSpawnEggs(){
-			registerEntityEgg(EntityNymph.class, 0x999999, 0xFF0000, MobIDs.nymph);
+			registerEntityEgg(EntityNymph.class, 0x522900, 0x339966, MobIDs.nymph);
 		}
 		
 		public static void registerEntityEgg(Class<? extends Entity>entity, int primaryColor, int secondaryColor, int eid) {
