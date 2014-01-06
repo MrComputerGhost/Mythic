@@ -17,8 +17,7 @@ public class GuiSpellBook extends GuiContainer {
     protected void drawGuiContainerForegroundLayer(int par1, int par2)
     {
 
-        fontRenderer.drawString(StatCollector.translateToLocal("he"), 28, 6, 4210752);
-        fontRenderer.drawString(StatCollector.translateToLocal("there"), 8, ySize - 96 + 2, 4210752);
+
     }
 
     /**
@@ -28,9 +27,6 @@ public class GuiSpellBook extends GuiContainer {
     protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3)
     {
 
-        GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-        int var5 = (width - xSize) / 2;
-        int var6 = (height - ySize) / 2;
-        this.drawTexturedModalRect(var5, var6, 0, 0, xSize, ySize);
+    	
     }
 }
