@@ -44,7 +44,7 @@ public class Mythic {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
 		
-		NetworkRegistry.instance().registerGuiHandler(instance, new GuiHandler());
+		
 
 		ConfigurationHandler.init(new File(e.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.MOD_ID + File.separator + Reference.MOD_ID + ".cfg"));
 		
@@ -67,6 +67,8 @@ public class Mythic {
 		 EntityRegistry.registerModEntity(EntityNymph.class, "Nypmh", 0, this, 80, 1, true);           
 		
 		proxy.registerRenderThings();
+		
+		NetworkRegistry.instance().registerGuiHandler(instance, new GuiHandler());
 		
 		addNames();
 		

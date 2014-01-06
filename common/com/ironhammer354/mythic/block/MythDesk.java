@@ -31,7 +31,7 @@ public class MythDesk extends BlockContainer {
 	
 	@Override
 	public TileEntity createNewTileEntity(World world) {
-		
-		return new TileEntityMythicDesk();
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
