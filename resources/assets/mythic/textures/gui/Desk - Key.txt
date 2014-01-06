@@ -1,0 +1,5 @@
+1,2,3 : Input Slots
+4: Paper Slot (Only Accepts Paper)
+5:Output Slot (Spell)
+6:Inventory
+7:Hot Bar Inventory
