@@ -7,8 +7,8 @@ public class EventSound
 {
         @ForgeSubscribe
         public void onSoundLoad(SoundLoadEvent event) {
-                event.manager.addSound("mythic:sound/mob/nymph/hurt.ogg"/*sound path*/);
-                event.manager.addSound("mythic:sound/mob/nymph/living.ogg"/*sound path*/);
-                event.manager.addSound("mythic:sound/mob/nymph/death.ogg"/*sound path*/);
+                event.manager.addSound("mythic:mob/nymph/hurt.ogg"/*sound path*/);
+                event.manager.addSound("mythic:mob/nymph/living.ogg"/*sound path*/);
+                event.manager.addSound("mythic:mob/nymph/death.ogg"/*sound path*/);
         }
 }

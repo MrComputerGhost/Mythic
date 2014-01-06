@@ -6,6 +6,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 import com.ironhammer354.mythic.block.MythBlocks;
 import com.ironhammer354.mythic.config.ConfigurationHandler;
+import com.ironhammer354.mythic.core.handler.GuiHandler;
 import com.ironhammer354.mythic.core.proxy.CommonProxy;
 import com.ironhammer354.mythic.creativetab.TabMyth;
 import com.ironhammer354.mythic.entity.mob.EntityNymph;
@@ -23,6 +24,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -41,6 +43,8 @@ public class Mythic {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
+		
+		NetworkRegistry.instance().registerGuiHandler(instance, new GuiHandler());
 
 		ConfigurationHandler.init(new File(e.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.MOD_ID + File.separator + Reference.MOD_ID + ".cfg"));
 		
@@ -53,6 +57,8 @@ public class Mythic {
 		CraftingManager.addRecipes();
 		
 		SpawnEntityEggs.CreateSpawnEggs();
+		
+		proxy.registerSound();
 	}
 
 	@EventHandler
@@ -62,7 +68,6 @@ public class Mythic {
 	        LanguageRegistry.instance().addStringLocalization("entity.YourMobName.name", "en_US","YourMobName");
 		
 		proxy.registerRenderThings();
-		proxy.registerSound();
 		
 		addNames();
 		

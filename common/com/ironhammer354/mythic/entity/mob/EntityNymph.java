@@ -35,19 +35,19 @@ public class EntityNymph extends EntityMob
     @Override
     protected String getLivingSound()
     {
-        return "mythic:sound/mob/nymph/living";
+        return "mythic:mob/nymph/living.ogg";
     }
 
     @Override
     protected String getHurtSound()
     {
-        return "mythic:sound/mob/nymph/hurt";
+        return "mythic:mob/nymph/hurt.ogg";
     }
 
     @Override
     protected String getDeathSound()
     {
-        return "mythic:sound/mob/nymph/death";
+        return "mythic:mob/nymph/death.ogg";
     }
 
     @Override

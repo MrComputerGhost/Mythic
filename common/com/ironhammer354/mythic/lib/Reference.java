@@ -8,4 +8,5 @@ public class Reference {
 	public static final String CLIENT_PROXY = "com.ironhammer354.mythic.core.proxy.ClientProxy";
 	public static final String COMMON_PROXY = "com.ironhammer354.mythic.core.proxy.CommonProxy";
 	public static final int VANILLA_ITEMID_FIX = 256;
+	public static final int SPELLBOOK_GUI_ID = 0;
 }
