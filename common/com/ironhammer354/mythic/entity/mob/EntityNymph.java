@@ -29,31 +29,25 @@ public class EntityNymph extends EntityMob
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(10.0D);
         this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.20000000298023224D);
-        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(50.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(0.25D);
     }
 
     @Override
     protected String getLivingSound()
     {
-
-        return "mythic:sound/mob/nymph/living.ogg";
-
+        return "mythic:mob.nymph.living"/*sound path*/;
     }
 
     @Override
     protected String getHurtSound()
     {
-
-        return "mythic:sound/mob/nymph/hurt.ogg";
-
+        return "mythic:mob.nymph.hurt"/*sound path*/;
     }
 
     @Override
     protected String getDeathSound()
     {
-
-        return "mythic:sound/mob/nymph/death.ogg";
-
+        return "mythic:mob.nymph.death"/*sound path*/;
     }
 
     @Override
