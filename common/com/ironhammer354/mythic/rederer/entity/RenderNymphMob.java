@@ -10,7 +10,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class RenderNymphMob extends RenderLiving
 {
-    private static final ResourceLocation NymphTexture = new ResourceLocation(""/*texture path*/); 
+    private static final ResourceLocation NymphTexture = new ResourceLocation("mythic:textures/mobs/Nymph.png"/*texture path*/); 
 
     public RenderNymphMob(ModelBase par1ModelBase, float par2)
     {

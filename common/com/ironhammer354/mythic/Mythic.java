@@ -9,6 +9,7 @@ import com.ironhammer354.mythic.config.ConfigurationHandler;
 import com.ironhammer354.mythic.core.proxy.CommonProxy;
 import com.ironhammer354.mythic.creativetab.TabMyth;
 import com.ironhammer354.mythic.entity.mob.EntityNymph;
+import com.ironhammer354.mythic.entity.mob.SpawnEntityEggs;
 import com.ironhammer354.mythic.item.MythItems;
 import com.ironhammer354.mythic.lib.Reference;
 import com.ironhammer354.mythic.recipe.CraftingManager;
@@ -50,6 +51,8 @@ public class Mythic {
 		WorldGen.init();
 		
 		CraftingManager.addRecipes();
+		
+		SpawnEntityEggs.CreateSpawnEggs();
 	}
 
 	@EventHandler

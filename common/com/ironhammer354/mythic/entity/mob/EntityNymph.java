@@ -1,5 +1,8 @@
 package com.ironhammer354.mythic.entity.mob;
 
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityEggInfo;
+import net.minecraft.entity.EntityList;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.world.World;
@@ -32,19 +35,19 @@ public class EntityNymph extends EntityMob
     @Override
     protected String getLivingSound()
     {
-        return ""/*sound path*/;
+        return "mythic:sound/mob/nymph/living.ogg";
     }
 
     @Override
     protected String getHurtSound()
     {
-        return ""/*sound path*/;
+        return "mythic:sound/mob/nymph/hurt.ogg";
     }
 
     @Override
     protected String getDeathSound()
     {
-        return ""/*sound path*/;
+        return "mythic:sound/mob/nymph/death.ogg";
     }
 
     @Override
@@ -52,5 +55,4 @@ public class EntityNymph extends EntityMob
     {
         return 0.4F;
     }
-    
 }
