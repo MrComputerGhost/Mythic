@@ -3,7 +3,9 @@ package com.ironhammer354.mythic.core.handler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
+import com.ironhammer354.mythic.client.ContainerMythDesk;
 import com.ironhammer354.mythic.client.ContainerSpellBook;
+import com.ironhammer354.mythic.client.GuiMythDesk;
 import com.ironhammer354.mythic.client.GuiSpellBook;
 import com.ironhammer354.mythic.lib.Reference;
 
@@ -16,7 +18,8 @@ public class GuiHandler implements IGuiHandler{
 
 		if(ID == Reference.SPELLBOOK_GUI_ID)
 			return new ContainerSpellBook(player.inventory, world, x, y, z);
-		
+		if(ID == Reference.MYTHDESK_GUI_ID)
+			return new ContainerMythDesk(player.inventory, world, x, y, z);
 		return null;
 	}
 
@@ -25,7 +28,8 @@ public class GuiHandler implements IGuiHandler{
 
 		if(ID == Reference.SPELLBOOK_GUI_ID)
 			return new GuiSpellBook(player, world, x, y, z);
-		
+		if(ID == Reference.MYTHDESK_GUI_ID)
+			return new GuiMythDesk(player, world, x, y, z);
 		return null;
 	}
 }

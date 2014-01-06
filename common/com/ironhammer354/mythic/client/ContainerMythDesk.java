@@ -5,10 +5,10 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.world.World;
 
-public class ContainerSpellBook extends Container {
+public class ContainerMythDesk extends Container {
 
-	public ContainerSpellBook(InventoryPlayer par1InventoryPlayer, World par2World, int par3, int par4, int par5) {
-		
+	public ContainerMythDesk(InventoryPlayer inventory, World world, int x,	int y, int z) {
+
 	}
 
 	@Override

@@ -16,12 +16,13 @@ public class SpellBook extends ItemMyth {
 		this.setUnlocalizedName(Strings.RESOURCE_PREFIX + Strings.SPELLBOOK_NAME);
 	}
 	
-	public boolean onItemUse(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, World par3World, int par4, int par5, int par6, int par7, float par8, float par9, float par10) {
-        
-		if(!par2EntityPlayer.isSneaking()){
+	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+    {
+			if(!par3EntityPlayer.isSneaking()){
 			
-			par2EntityPlayer.openGui(Mythic.instance, Reference.SPELLBOOK_GUI_ID, par3World, (int)par2EntityPlayer.posX, (int)par2EntityPlayer.posY, (int)par2EntityPlayer.posZ);
+				par3EntityPlayer.openGui(Mythic.instance, Reference.SPELLBOOK_GUI_ID, par2World, (int)par3EntityPlayer.posX, (int)par3EntityPlayer.posY, (int)par3EntityPlayer.posZ);
 		}
-		return true;
+		return par1ItemStack;
+		
     }
 }

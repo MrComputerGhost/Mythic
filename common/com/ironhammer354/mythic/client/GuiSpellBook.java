@@ -10,6 +10,7 @@ import org.lwjgl.opengl.GL11;
 public class GuiSpellBook extends GuiContainer {
 
 	public GuiSpellBook(EntityPlayer player, World world, int x, int y,  int z) {
+		
 		super(new ContainerSpellBook(player.inventory, world, x, y, z));
 	}
 
