@@ -1,8 +1,15 @@
 itemGroup.mythic=Mythic
 
-tile.mythic:placeHolderBlock.name=Place Holder
+tile.placeHolderBlock.name=Place Holder
+tile.aquaditeOre.name=Aqaudite Ore
+tile.zarfronOre.name=Zarfron Ore
+tile.erieOre.name=Arcane Ore
+tile.mythDesk.name=Desk
+tile.quartisBlock.name=Quartis Block
 
 item.mythic:spellBook.name=Spell Book
 item.mythic:zarfron.name=Zarfron
 item.mythic:aquadite.name=Aquadite
 item.mythic:erieDrop.name=Arcane Drop
+
+entity.mythic.Nymph.name=Nymph

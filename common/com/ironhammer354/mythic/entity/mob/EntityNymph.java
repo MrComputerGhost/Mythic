@@ -28,8 +28,8 @@ public class EntityNymph extends EntityMob
     {
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(10.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.20000000298023224D);
-        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(0.25D);
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.5D);
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(1.0D);
     }
 
     @Override

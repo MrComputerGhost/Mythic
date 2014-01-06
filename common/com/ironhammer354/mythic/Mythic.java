@@ -65,7 +65,6 @@ public class Mythic {
 	public void init(FMLInitializationEvent e) {
 
 		 EntityRegistry.registerModEntity(EntityNymph.class, "Nypmh", 0, this, 80, 1, true);           
-	        LanguageRegistry.instance().addStringLocalization("entity.YourMobName.name", "en_US","Nymph");
 		
 		proxy.registerRenderThings();
 		

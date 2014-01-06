@@ -29,6 +29,7 @@ public class ConfigurationHandler {
 			BlockIDs.zarfronOreID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.ZARFRONORE_NAME, BlockIDs.ZARFRONORE_DEFAULT).getInt(BlockIDs.ZARFRONORE_DEFAULT);
 			BlockIDs.erieOreID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.ERIEORE_NAME, BlockIDs.ERIEORE_DEFAULT).getInt(BlockIDs.ERIEORE_DEFAULT);
 			BlockIDs.mythDeskID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.MYTHDESK_NAME, BlockIDs.MYTHDESK_DEFAULT).getInt(BlockIDs.MYTHDESK_DEFAULT);
+			BlockIDs.quartisBlockID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.QUARTISBLOCK_NAME, BlockIDs.QUARTISBLOCK_DEFAULT).getInt(BlockIDs.QUARTISBLOCK_DEFAULT);
 			
 			ItemIDs.spellBookID = config.getItem(Configuration.CATEGORY_ITEM, Strings.SPELLBOOK_NAME, ItemIDs.SPELLBOOK_DEFAULT).getInt(ItemIDs.SPELLBOOK_DEFAULT);
 			ItemIDs.zarfronID = config.getItem(Configuration.CATEGORY_ITEM, Strings.ZARFRON_NAME, ItemIDs.ZARFRON_DEFAULT).getInt(ItemIDs.ZARFRON_DEFAULT);

@@ -15,5 +15,6 @@ public class Strings {
 	public static final String ERIEDROP_NAME = "erieDrop";
 
 	public static final String MYTHDESK_NAME = "mythDesk";
+	public static final String QUARTISBLOCK_NAME = "quartisBlock";
 
 }
