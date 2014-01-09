@@ -13,16 +13,16 @@ import com.ironhammer354.mythic.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class BlockPlaceHolderBlock extends Block {
+public class WitherBlock extends Block {
 
 	@SideOnly(Side.CLIENT)
 	public Icon[] icons;
 
-	public BlockPlaceHolderBlock(int id) {
+	public WitherBlock(int id) {
 
 		super(id, Material.rock);
 		setCreativeTab(Mythic.tabMyth);
-		setUnlocalizedName(Strings.PLACEHOLDERBLOCK_NAME);
+		setUnlocalizedName(Strings.WITHERBLOCK_NAME);
 		setHardness(3.0F);
 		setResistance(8.0F);
 	}

@@ -10,6 +10,7 @@ public class MythItems {
 	public static Item zarfron;
 	public static Item aquadite;
 	public static Item erieDrop;
+	public static Item boneChunk;
 
 	public static void initItems() {
 
@@ -17,6 +18,7 @@ public class MythItems {
 		zarfron = new Zarfron(ItemIDs.zarfronID);
 		aquadite = new Aquadite(ItemIDs.aquaditeID);
 		erieDrop = new ErieDrop(ItemIDs.erieDropID);
+		boneChunk = new BoneChunk(ItemIDs.boneChunkID);
 
 	}
 }
