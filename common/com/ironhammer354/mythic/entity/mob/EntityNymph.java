@@ -55,4 +55,9 @@ public class EntityNymph extends EntityMob
     {
         return 0.4F;
     }
+    @Override
+    public boolean getCanSpawnHere()
+    {
+            return true;
+    }
 }

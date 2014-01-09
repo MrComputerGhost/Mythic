@@ -3,6 +3,8 @@ package com.ironhammer354.mythic;
 import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.world.biome.BiomeGenBase;
 
 import com.ironhammer354.mythic.block.MythBlocks;
 import com.ironhammer354.mythic.config.ConfigurationHandler;
@@ -64,7 +66,9 @@ public class Mythic {
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
 
-		 EntityRegistry.registerModEntity(EntityNymph.class, "Nypmh", 0, this, 80, 1, true);  
+		 EntityRegistry.registerModEntity(EntityNymph.class, "Nypmh", 0, this, 80, 1, true);
+	     EntityRegistry.addSpawn(EntityNymph.class, 3, 2, 8, EnumCreatureType.creature,
+                    BiomeGenBase.forest, BiomeGenBase.river);
 		 LanguageRegistry.instance().addStringLocalization("entity.mythic.Nymph.name", "en_US","Nymph");
 		
 		proxy.registerRenderThings();
