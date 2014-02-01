@@ -34,6 +34,16 @@ public class QuartisBlock extends Block {
         blockIcon = iconRegister.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
     }
 	
+    public boolean renderAsNormalBlock()
+    {
+        return false;
+    }
+    
+    public boolean isOpaqueCube()
+    {
+        return false;
+    }
+    
 	protected String getUnwrappedUnlocalizedName(String unlocalizedName)
     {
 

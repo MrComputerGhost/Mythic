@@ -36,6 +36,9 @@ public class ConfigurationHandler {
 			ItemIDs.aquaditeID = config.getItem(Configuration.CATEGORY_ITEM, Strings.AQUADITE_NAME, ItemIDs.AQUADITE_DEFAULT).getInt(ItemIDs.AQUADITE_DEFAULT);
 			ItemIDs.erieDropID = config.getItem(Configuration.CATEGORY_ITEM, Strings.ERIEDROP_NAME, ItemIDs.ERIEDROP_DEFAULT).getInt(ItemIDs.ERIEDROP_DEFAULT);
 			ItemIDs.boneChunkID = config.getItem(Configuration.CATEGORY_ITEM, Strings.BONECHUNK_NAME, ItemIDs.BONECHUNK_DEFAULT).getInt(ItemIDs.BONECHUNK_DEFAULT);
+			ItemIDs.wandQuartzID = config.getItem(Configuration.CATEGORY_ITEM, Strings.WANDQUARTZ_NAME, ItemIDs.WANDQUARTZ_DEFAULT).getInt(ItemIDs.WANDQUARTZ_DEFAULT);
+			ItemIDs.wandEnderID = config.getItem(Configuration.CATEGORY_ITEM, Strings.WANDENDER_NAME, ItemIDs.WANDENDER_DEFAULT).getInt(ItemIDs.WANDENDER_DEFAULT);
+			ItemIDs.wandFarieID = config.getItem(Configuration.CATEGORY_ITEM, Strings.WANDFARIE_NAME, ItemIDs.WANDFARIE_DEFAULT).getInt(ItemIDs.WANDFARIE_DEFAULT);
 			
 			
 

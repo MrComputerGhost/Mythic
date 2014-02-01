@@ -13,6 +13,9 @@ public class Strings {
 	public static final String AQUADITE_NAME = "aquadite";
 	public static final String ERIEDROP_NAME = "erieDrop";
 	public static final String BONECHUNK_NAME = "boneChunk";
+	public static final String WANDQUARTZ_NAME = "wandQuartz";
+	public static final String WANDENDER_NAME = "wandEnder";
+	public static final String WANDFARIE_NAME = "wandFarie";
 
 	public static final String MYTHDESK_NAME = "mythDesk";
 	public static final String QUARTISBLOCK_NAME = "quartisBlock";

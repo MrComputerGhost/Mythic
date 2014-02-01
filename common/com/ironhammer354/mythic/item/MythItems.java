@@ -11,6 +11,9 @@ public class MythItems {
 	public static Item aquadite;
 	public static Item erieDrop;
 	public static Item boneChunk;
+	public static Item wandQuartz;
+	public static Item wandEnder;
+	public static Item wandFarie;
 
 	public static void initItems() {
 
@@ -19,6 +22,9 @@ public class MythItems {
 		aquadite = new Aquadite(ItemIDs.aquaditeID);
 		erieDrop = new ErieDrop(ItemIDs.erieDropID);
 		boneChunk = new BoneChunk(ItemIDs.boneChunkID);
+		wandQuartz = new WandQuartz(ItemIDs.wandQuartzID);
+		wandEnder = new WandEnder(ItemIDs.wandEnderID);
+		wandFarie = new WandFarie(ItemIDs.wandFarieID);
 
 	}
 }

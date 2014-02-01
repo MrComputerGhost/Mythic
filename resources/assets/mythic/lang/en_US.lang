@@ -13,5 +13,9 @@ item.mythic:zarfron.name=Zarfron
 item.mythic:aquadite.name=Aquadite
 item.mythic:erieDrop.name=Arcane Drop
 item.mythic:boneChunk.name=Bone Chunks
+item.mythic:wandQuartz.name=Dull Chunks
+item.mythic:wandEnder.name=Dark Chunks
+item.mythic:wandZarfron.name=Shiny Chunks
+item.mythic:wandFarie.name=Pretty Chunks
 
 entity.mythic.Nymph.name=Nymph
