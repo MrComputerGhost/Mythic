@@ -92,7 +92,6 @@ public class WitherBlock extends Block {
                     if (d1 < (double)par2 || d1 > (double)(par2 + 1) || d2 < 0.0D || d2 > (double)(par3 + 1) || d3 < (double)par4 || d3 > (double)(par4 + 1))
                     {
                     	world.spawnParticle("smoke", d1, d2, d3, 0.0D, 0.0D, 0.0D);
-
                     }
 
             }
