@@ -3,7 +3,6 @@ package com.ironhammer354.mythic.block;
 import javax.swing.Icon;
 
 import net.minecraft.block.BlockPortal;
-import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -15,7 +14,6 @@ import com.ironhammer354.mythic.Mythic;
 import com.ironhammer354.mythic.lib.Reference;
 import com.ironhammer354.mythic.lib.Strings;
 import com.ironhammer354.mythic.world.gen.mythicworld.MythTeleport;
-import com.ironhammer354.mythic.world.gen.mythicworld.MythWorlds;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -46,11 +44,11 @@ public class ShinyQuartisBlock  extends BlockPortal {
                     {
                           player.timeUntilPortal = 10;
                     }
-                    else if (player.dimension != MythWorlds.myth1ID)
+                    else if (player.dimension != Mythic.myth1Id)
                     {
                           player.timeUntilPortal = 10;
 
-                          player.mcServer.getConfigurationManager().transferPlayerToDimension(player, MythWorlds.myth1ID, new MythTeleport (mServer.worldServerForDimension(MythWorlds.myth1ID)));
+                          player.mcServer.getConfigurationManager().transferPlayerToDimension(player, Mythic.myth1Id, new MythTeleport (mServer.worldServerForDimension(Mythic.myth1Id)));
                     }
                     else
                     {
