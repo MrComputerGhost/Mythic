@@ -8,6 +8,8 @@ public class BlockIDs {
 	public static final int MYTHDESK_DEFAULT = 3004;
 	public static final int QUARTISBLOCK_DEFAULT = 3005;
 	public static final int WITHERBLOCK_DEFAULT = 3006;
+	public static final int ANGELSANDBLOCK_DEFAULT = 3007;
+	public static final int SHINYQUARTISBLOCK_DEFAULT = 3008;
 
 	public static int aquaditeOreID;
 	public static int zarfronOreID;
@@ -15,5 +17,7 @@ public class BlockIDs {
 	public static int mythDeskID;
 	public static int quartisBlockID;
 	public static int witherBlockID;
+	public static int angelSandBlockID;
+	public static int shinyQuartisBlockID;
 	
 }

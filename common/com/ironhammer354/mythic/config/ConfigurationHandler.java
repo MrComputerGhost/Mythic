@@ -30,6 +30,8 @@ public class ConfigurationHandler {
 			BlockIDs.mythDeskID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.MYTHDESK_NAME, BlockIDs.MYTHDESK_DEFAULT).getInt(BlockIDs.MYTHDESK_DEFAULT);
 			BlockIDs.quartisBlockID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.QUARTISBLOCK_NAME, BlockIDs.QUARTISBLOCK_DEFAULT).getInt(BlockIDs.QUARTISBLOCK_DEFAULT);
 			BlockIDs.witherBlockID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.WITHERBLOCK_NAME, BlockIDs.WITHERBLOCK_DEFAULT).getInt(BlockIDs.WITHERBLOCK_DEFAULT);
+			BlockIDs.angelSandBlockID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.ANGELSANDBLOCK_NAME, BlockIDs.ANGELSANDBLOCK_DEFAULT).getInt(BlockIDs.ANGELSANDBLOCK_DEFAULT);
+			BlockIDs.shinyQuartisBlockID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.SHINYQUARTISBLOCK_NAME, BlockIDs.SHINYQUARTISBLOCK_DEFAULT).getInt(BlockIDs.SHINYQUARTISBLOCK_DEFAULT);
 			
 			ItemIDs.spellBookID = config.getItem(Configuration.CATEGORY_ITEM, Strings.SPELLBOOK_NAME, ItemIDs.SPELLBOOK_DEFAULT).getInt(ItemIDs.SPELLBOOK_DEFAULT);
 			ItemIDs.zarfronID = config.getItem(Configuration.CATEGORY_ITEM, Strings.ZARFRON_NAME, ItemIDs.ZARFRON_DEFAULT).getInt(ItemIDs.ZARFRON_DEFAULT);

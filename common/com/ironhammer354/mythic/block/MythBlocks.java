@@ -1,6 +1,7 @@
 package com.ironhammer354.mythic.block;
 
 import net.minecraft.block.Block;
+import net.minecraftforge.common.MinecraftForge;
 
 import com.ironhammer354.mythic.block.ore.OreAquadite;
 import com.ironhammer354.mythic.block.ore.OreErie;
@@ -18,6 +19,8 @@ public class MythBlocks {
 	public static Block mythDesk;
 	public static Block quartisBlock;
 	public static Block witherBlock;
+	public static Block angelSandBlock;
+	public static Block shinyQuartisBlock;
 
 	public static void initBlocks() {
 
@@ -27,6 +30,8 @@ public class MythBlocks {
 		mythDesk = new MythDesk(BlockIDs.mythDeskID);
 		quartisBlock = new QuartisBlock(BlockIDs.quartisBlockID);
 		witherBlock = new WitherBlock(BlockIDs.witherBlockID);
+		angelSandBlock = new AngelSandBlock(BlockIDs.angelSandBlockID);
+		shinyQuartisBlock = new ShinyQuartisBlock(BlockIDs.shinyQuartisBlockID);
 
 		GameRegistry.registerBlock(aquaditeOre, Strings.AQUADITEORE_NAME);
 		GameRegistry.registerBlock(zarfronOre, Strings.ZARFRONORE_NAME);
@@ -34,5 +39,11 @@ public class MythBlocks {
 		GameRegistry.registerBlock(mythDesk, Strings.MYTHDESK_NAME);
 		GameRegistry.registerBlock(quartisBlock, Strings.QUARTISBLOCK_NAME);
 		GameRegistry.registerBlock(witherBlock, Strings.WITHERBLOCK_NAME);
+		GameRegistry.registerBlock(angelSandBlock, Strings.ANGELSANDBLOCK_NAME);
+		GameRegistry.registerBlock(shinyQuartisBlock, Strings.SHINYQUARTISBLOCK_NAME);
+		
+		MinecraftForge.setBlockHarvestLevel(aquaditeOre, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(zarfronOre, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(erieOre, "pickaxe", 2);
 	}
 }
