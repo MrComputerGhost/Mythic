@@ -5,6 +5,7 @@ import java.io.File;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraftforge.common.DimensionManager;
 
 import com.ironhammer354.mythic.block.MythBlocks;
 import com.ironhammer354.mythic.config.ConfigurationHandler;
@@ -17,6 +18,7 @@ import com.ironhammer354.mythic.item.MythItems;
 import com.ironhammer354.mythic.lib.Reference;
 import com.ironhammer354.mythic.recipe.CraftingManager;
 import com.ironhammer354.mythic.world.gen.WorldGen;
+import com.ironhammer354.mythic.world.gen.mythicworld.MythWorld1;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -72,6 +74,8 @@ public class Mythic {
                     BiomeGenBase.forest, BiomeGenBase.river);
 		 LanguageRegistry.instance().addStringLocalization("entity.mythic.Nymph.name", "en_US","Nymph");
 		 
+		 DimensionManager.registerProviderType(Mythic.myth1Id, MythWorld1.class, false);
+			DimensionManager.registerDimension(Mythic.myth1Id, Mythic.myth1Id);
 		
 		proxy.registerRenderThings();
 		
