@@ -21,6 +21,8 @@ public class CraftingManager {
 	public static ItemStack clay = new ItemStack(Item.clay);
 	public static ItemStack wither = new ItemStack(MythBlocks.witherBlock);
 	public static ItemStack sword = new ItemStack(Item.swordDiamond);
+	public static ItemStack white = new ItemStack(MythBlocks.quartisBlock);
+	public static ItemStack gray = new ItemStack(Block.cobblestone);
 	
 	/*Insert ItemStacks Here*/
 	
@@ -30,6 +32,7 @@ public class CraftingManager {
 		 GameRegistry.addRecipe(new ItemStack(MythItems.boneChunk), "###", "#$#", "###", '#', bone, '$', clay);
 		 GameRegistry.addRecipe(new ItemStack(MythBlocks.witherBlock), "###", "$$$", " $ ", '#', wskull, '$', soulsand);
 		 GameRegistry.addRecipe(new ItemStack(Item.netherStar), "###", "#$#", "###", '#', sword, '$', wither);
+		 GameRegistry.addRecipe(new ItemStack(MythBlocks.quartisBlock, 8), "###", "#$#", "###", '#', sword, '$', bone);
 		}
 	
 }
