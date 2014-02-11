@@ -22,4 +22,5 @@ public class Strings {
 	public static final String WITHERBLOCK_NAME = "witherBlock";
 	public static final String ANGELSANDBLOCK_NAME = "angelSandBlock";
 	public static final String SHINYQUARTISBLOCK_NAME = "shinyQuartisBlock";
+	public static final String FORBIDRUNE_NAME = "forbidRune";
 }
