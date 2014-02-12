@@ -32,7 +32,7 @@ public class CraftingManager {
 		 GameRegistry.addRecipe(new ItemStack(MythItems.boneChunk), "###", "#$#", "###", '#', bone, '$', clay);
 		 GameRegistry.addRecipe(new ItemStack(MythBlocks.witherBlock), "###", "$$$", " $ ", '#', wskull, '$', soulsand);
 		 GameRegistry.addRecipe(new ItemStack(Item.netherStar), "###", "#$#", "###", '#', sword, '$', wither);
-		 GameRegistry.addRecipe(new ItemStack(MythBlocks.quartisBlock, 8), "###", "#$#", "###", '#', sword, '$', bone);
+		 GameRegistry.addRecipe(new ItemStack(MythBlocks.quartisBlock, 8), "###", "#$#", "###", '#', gray, '$', clay);
 		}
 	
 }
