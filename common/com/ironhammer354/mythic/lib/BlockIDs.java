@@ -11,6 +11,8 @@ public class BlockIDs {
 	public static final int ANGELSANDBLOCK_DEFAULT = 3007;
 	public static final int SHINYQUARTISBLOCK_DEFAULT = 3008;
 	public static final int FORBIDRUNE_DEFAULT = 3009;
+	public static final int QUARTISSMALLBRICK_DEFAULT = 3010;
+	public static final int QUARTISLARGEBRICK_DEFAULT = 3011;
 
 	public static int aquaditeOreID;
 	public static int zarfronOreID;
@@ -21,5 +23,7 @@ public class BlockIDs {
 	public static int angelSandBlockID;
 	public static int shinyQuartisBlockID;
 	public static int forbidRuneID;
+	public static int quartisSmallBrickID;
+	public static int quartisLargeBrickID;
 	
 }

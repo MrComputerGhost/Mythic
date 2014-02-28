@@ -33,6 +33,8 @@ public class ConfigurationHandler {
 			BlockIDs.angelSandBlockID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.ANGELSANDBLOCK_NAME, BlockIDs.ANGELSANDBLOCK_DEFAULT).getInt(BlockIDs.ANGELSANDBLOCK_DEFAULT);
 			BlockIDs.shinyQuartisBlockID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.SHINYQUARTISBLOCK_NAME, BlockIDs.SHINYQUARTISBLOCK_DEFAULT).getInt(BlockIDs.SHINYQUARTISBLOCK_DEFAULT);
 			BlockIDs.forbidRuneID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.FORBIDRUNE_NAME, BlockIDs.FORBIDRUNE_DEFAULT).getInt(BlockIDs.FORBIDRUNE_DEFAULT);
+			BlockIDs.quartisSmallBrickID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.QUARTISSMALLBRICK_NAME, BlockIDs.QUARTISSMALLBRICK_DEFAULT).getInt(BlockIDs.QUARTISSMALLBRICK_DEFAULT);
+			BlockIDs.quartisLargeBrickID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.QUARTISLARGEBRICK_NAME, BlockIDs.QUARTISLARGEBRICK_DEFAULT).getInt(BlockIDs.QUARTISLARGEBRICK_DEFAULT);
 			
 			ItemIDs.spellBookID = config.getItem(Configuration.CATEGORY_ITEM, Strings.SPELLBOOK_NAME, ItemIDs.SPELLBOOK_DEFAULT).getInt(ItemIDs.SPELLBOOK_DEFAULT);
 			ItemIDs.zarfronID = config.getItem(Configuration.CATEGORY_ITEM, Strings.ZARFRON_NAME, ItemIDs.ZARFRON_DEFAULT).getInt(ItemIDs.ZARFRON_DEFAULT);

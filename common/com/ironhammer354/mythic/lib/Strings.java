@@ -23,4 +23,6 @@ public class Strings {
 	public static final String ANGELSANDBLOCK_NAME = "angelSandBlock";
 	public static final String SHINYQUARTISBLOCK_NAME = "shinyQuartisBlock";
 	public static final String FORBIDRUNE_NAME = "forbidRune";
+	public static final String QUARTISSMALLBRICK_NAME = "quartisSmallBrick";
+	public static final String QUARTISLARGEBRICK_NAME = "quartisLargeBrick";
 }

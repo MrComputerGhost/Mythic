@@ -7,7 +7,11 @@ tile.erieOre.name=Arcane Ore
 tile.mythDesk.name=Desk
 tile.quartisBlock.name=Quartis Block
 tile.witherBlock.name=Wither Block
-tile.forbidRune.name=Forbearance Rune
+tile.forbidRune.name=Forbiddance Rune
+tile.shinyQuartisBlock.name=Infused Quartis
+tile.angelSandBlock.name=Angel Sand
+tile.quartisSmallBrick.name= Small Quartis Bricks
+tile.quartisLargeBrick.name= Large Quartis Bricks
 
 item.mythic:spellBook.name=Spell Book
 item.mythic:zarfron.name=Zarfron

@@ -23,6 +23,8 @@ public class MythBlocks {
 	public static Block angelSandBlock;
 	public static Block shinyQuartisBlock;
 	public static Block forbidRune;
+	public static Block quartisLargeBrick;
+	public static Block quartisSmallBrick;
 
 	public static void initBlocks() {
 
@@ -35,6 +37,8 @@ public class MythBlocks {
 		angelSandBlock = new AngelSandBlock(BlockIDs.angelSandBlockID);
 		shinyQuartisBlock = new ShinyQuartisBlock(BlockIDs.shinyQuartisBlockID);
 		forbidRune = new ForbidRune(BlockIDs.forbidRuneID);
+		quartisLargeBrick = new QuartisLargeBrick(BlockIDs.quartisLargeBrickID);
+		quartisSmallBrick = new QuartisSmallBrick(BlockIDs.quartisSmallBrickID);
 
 		GameRegistry.registerBlock(aquaditeOre, Strings.AQUADITEORE_NAME);
 		GameRegistry.registerBlock(zarfronOre, Strings.ZARFRONORE_NAME);
@@ -45,6 +49,8 @@ public class MythBlocks {
 		GameRegistry.registerBlock(angelSandBlock, Strings.ANGELSANDBLOCK_NAME);
 		GameRegistry.registerBlock(shinyQuartisBlock, Strings.SHINYQUARTISBLOCK_NAME);
 		GameRegistry.registerBlock(forbidRune, Strings.FORBIDRUNE_NAME);
+		GameRegistry.registerBlock(quartisSmallBrick, Strings.QUARTISSMALLBRICK_NAME);
+		GameRegistry.registerBlock(quartisLargeBrick, Strings.QUARTISLARGEBRICK_NAME);
 		
 		MinecraftForge.setBlockHarvestLevel(aquaditeOre, "pickaxe", 2);
 		MinecraftForge.setBlockHarvestLevel(zarfronOre, "pickaxe", 2);
