@@ -25,4 +25,7 @@ public class Strings {
 	public static final String FORBIDRUNE_NAME = "forbidRune";
 	public static final String QUARTISSMALLBRICK_NAME = "quartisSmallBrick";
 	public static final String QUARTISLARGEBRICK_NAME = "quartisLargeBrick";
+	public static final String QUARTISSOLIDBLOCK_NAME = "quartisSolidBlock";
+	public static final String NETHERSTONEBRICK_NAME = "netherStoneBrick";
+	public static final String NETHERSTONE_NAME = "netherStone";
 }

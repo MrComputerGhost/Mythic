@@ -25,7 +25,10 @@ public class MythBlocks {
 	public static Block forbidRune;
 	public static Block quartisLargeBrick;
 	public static Block quartisSmallBrick;
-
+	public static Block quartisSolidBlock;
+	public static Block netherStoneBrick;
+	public static Block netherStone;
+	
 	public static void initBlocks() {
 
 		aquaditeOre = new OreAquadite(BlockIDs.aquaditeOreID);
@@ -39,6 +42,9 @@ public class MythBlocks {
 		forbidRune = new ForbidRune(BlockIDs.forbidRuneID);
 		quartisLargeBrick = new QuartisLargeBrick(BlockIDs.quartisLargeBrickID);
 		quartisSmallBrick = new QuartisSmallBrick(BlockIDs.quartisSmallBrickID);
+		quartisSolidBlock = new QuartisSolidBlock(BlockIDs.quartisSolidBlockID);
+		netherStoneBrick = new NetherStoneBrick(BlockIDs.netherStoneBrickID);
+		netherStone = new NetherStone(BlockIDs.netherStoneID);
 
 		GameRegistry.registerBlock(aquaditeOre, Strings.AQUADITEORE_NAME);
 		GameRegistry.registerBlock(zarfronOre, Strings.ZARFRONORE_NAME);
@@ -51,6 +57,9 @@ public class MythBlocks {
 		GameRegistry.registerBlock(forbidRune, Strings.FORBIDRUNE_NAME);
 		GameRegistry.registerBlock(quartisSmallBrick, Strings.QUARTISSMALLBRICK_NAME);
 		GameRegistry.registerBlock(quartisLargeBrick, Strings.QUARTISLARGEBRICK_NAME);
+		GameRegistry.registerBlock(quartisSolidBlock, Strings.QUARTISSOLIDBLOCK_NAME);
+		GameRegistry.registerBlock(netherStoneBrick, Strings.NETHERSTONEBRICK_NAME);
+		GameRegistry.registerBlock(netherStone, Strings.NETHERSTONE_NAME);
 		
 		MinecraftForge.setBlockHarvestLevel(aquaditeOre, "pickaxe", 2);
 		MinecraftForge.setBlockHarvestLevel(zarfronOre, "pickaxe", 2);
