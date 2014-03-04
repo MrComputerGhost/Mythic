@@ -8,14 +8,13 @@ import net.minecraft.entity.EntityList;
 
 public class SpawnEntityEggs {
 
+    public static void CreateSpawnEggs() {
+        registerEntityEgg(EntityNymph.class, 0x522900, 0x339966, MobIDs.nymph);
+    }
 
-		public static void CreateSpawnEggs(){
-			registerEntityEgg(EntityNymph.class, 0x522900, 0x339966, MobIDs.nymph);
-		}
-		
-		public static void registerEntityEgg(Class<? extends Entity>entity, int primaryColor, int secondaryColor, int eid) {
-			int id = eid;
-			EntityList.IDtoClassMapping.put(id, entity);
-			EntityList.entityEggs.put(id, new EntityEggInfo(id, primaryColor, secondaryColor));
-		}
-	}
+    public static void registerEntityEgg(Class <? extends Entity > entity, int primaryColor, int secondaryColor, int eid) {
+        int id = eid;
+        EntityList.IDtoClassMapping.put(id, entity);
+        EntityList.entityEggs.put(id, new EntityEggInfo(id, primaryColor, secondaryColor));
+    }
+}

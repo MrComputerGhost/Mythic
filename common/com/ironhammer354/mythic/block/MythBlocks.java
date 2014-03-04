@@ -14,55 +14,56 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class MythBlocks {
 
-	public static Block aquaditeOre;
-	public static Block zarfronOre;
-	public static Block erieOre;
-	public static Block mythDesk;
-	public static Block quartisBlock;
-	public static Block witherBlock;
-	public static Block angelSandBlock;
-	public static Block shinyQuartisBlock;
-	public static Block forbidRune;
-	public static Block quartisLargeBrick;
-	public static Block quartisSmallBrick;
-	public static Block quartisSolidBlock;
-	public static Block netherStoneBrick;
-	public static Block netherStone;
-	
-	public static void initBlocks() {
+    public static Block aquaditeOre;
+    public static Block zarfronOre;
+    public static Block erieOre;
+    public static Block angelSandBlock;
+    public static Block witherBlock;
+    public static Block mythDesk;
+    public static Block forbidRune;
+    public static Block quartisStone;
+    public static Block quartisCobble;
+    public static Block quartisCobbleMossy;
+    public static Block quartisBrickLarge;
+    public static Block quartisBrickSmall;
+    public static Block netherBrickLarge;
+    public static Block netherStone;
 
-		aquaditeOre = new OreAquadite(BlockIDs.aquaditeOreID);
-		zarfronOre = new OreZarfron(BlockIDs.zarfronOreID);
-		erieOre = new OreErie(BlockIDs.erieOreID);
-		mythDesk = new MythDesk(BlockIDs.mythDeskID);
-		quartisBlock = new QuartisBlock(BlockIDs.quartisBlockID);
-		witherBlock = new WitherBlock(BlockIDs.witherBlockID);
-		angelSandBlock = new AngelSandBlock(BlockIDs.angelSandBlockID);
-		shinyQuartisBlock = new ShinyQuartisBlock(BlockIDs.shinyQuartisBlockID);
-		forbidRune = new ForbidRune(BlockIDs.forbidRuneID);
-		quartisLargeBrick = new QuartisLargeBrick(BlockIDs.quartisLargeBrickID);
-		quartisSmallBrick = new QuartisSmallBrick(BlockIDs.quartisSmallBrickID);
-		quartisSolidBlock = new QuartisSolidBlock(BlockIDs.quartisSolidBlockID);
-		netherStoneBrick = new NetherStoneBrick(BlockIDs.netherStoneBrickID);
-		netherStone = new NetherStone(BlockIDs.netherStoneID);
+    public static void initBlocks() {
 
-		GameRegistry.registerBlock(aquaditeOre, Strings.AQUADITEORE_NAME);
-		GameRegistry.registerBlock(zarfronOre, Strings.ZARFRONORE_NAME);
-		GameRegistry.registerBlock(erieOre, Strings.ERIEORE_NAME);
-		GameRegistry.registerBlock(mythDesk, Strings.MYTHDESK_NAME);
-		GameRegistry.registerBlock(quartisBlock, Strings.QUARTISBLOCK_NAME);
-		GameRegistry.registerBlock(witherBlock, Strings.WITHERBLOCK_NAME);
-		GameRegistry.registerBlock(angelSandBlock, Strings.ANGELSANDBLOCK_NAME);
-		GameRegistry.registerBlock(shinyQuartisBlock, Strings.SHINYQUARTISBLOCK_NAME);
-		GameRegistry.registerBlock(forbidRune, Strings.FORBIDRUNE_NAME);
-		GameRegistry.registerBlock(quartisSmallBrick, Strings.QUARTISSMALLBRICK_NAME);
-		GameRegistry.registerBlock(quartisLargeBrick, Strings.QUARTISLARGEBRICK_NAME);
-		GameRegistry.registerBlock(quartisSolidBlock, Strings.QUARTISSOLIDBLOCK_NAME);
-		GameRegistry.registerBlock(netherStoneBrick, Strings.NETHERSTONEBRICK_NAME);
-		GameRegistry.registerBlock(netherStone, Strings.NETHERSTONE_NAME);
-		
-		MinecraftForge.setBlockHarvestLevel(aquaditeOre, "pickaxe", 2);
-		MinecraftForge.setBlockHarvestLevel(zarfronOre, "pickaxe", 2);
-		MinecraftForge.setBlockHarvestLevel(erieOre, "pickaxe", 2);
-	}
+        aquaditeOre = new OreAquadite(BlockIDs.aquaditeOreID);
+        zarfronOre = new OreZarfron(BlockIDs.zarfronOreID);
+        erieOre = new OreErie(BlockIDs.erieOreID);
+        angelSandBlock = new AngelSandBlock(BlockIDs.angelSandBlockID);
+        witherBlock = new WitherBlock(BlockIDs.witherBlockID);
+        mythDesk = new MythDesk(BlockIDs.mythDeskID);
+        forbidRune = new ForbidRune(BlockIDs.forbidRuneID);
+        quartisStone = new QuartisStone(BlockIDs.quartisStoneID);
+        quartisCobble = new QuartisCobble(BlockIDs.quartisCobbleID);
+        quartisCobbleMossy = new QuartisCobbleMossy(BlockIDs.quartisCobbleMossyID);
+        quartisBrickLarge = new QuartisBrickLarge(BlockIDs.quartisBrickLargeID);
+        quartisBrickSmall = new QuartisBrickSmall(BlockIDs.quartisBrickSmallID);
+        netherBrickLarge = new NetherBrickLarge(BlockIDs.netherBrickLargeID);
+        netherStone = new NetherStone(BlockIDs.netherStoneID);
+
+        //Registry
+        GameRegistry.registerBlock(aquaditeOre, Strings.AQUADITEORE_NAME);
+        GameRegistry.registerBlock(zarfronOre, Strings.ZARFRONORE_NAME);
+        GameRegistry.registerBlock(erieOre, Strings.ERIEORE_NAME);
+        GameRegistry.registerBlock(angelSandBlock, Strings.ANGELSANDBLOCK_NAME);
+        GameRegistry.registerBlock(witherBlock, Strings.WITHERBLOCK_NAME);
+        GameRegistry.registerBlock(mythDesk, Strings.MYTHDESK_NAME);
+        GameRegistry.registerBlock(forbidRune, Strings.FORBIDRUNE_NAME);
+        GameRegistry.registerBlock(quartisStone, Strings.QUARTISSTONE_NAME);
+        GameRegistry.registerBlock(quartisCobble, Strings.QUARTISCOBBLE_NAME);
+        GameRegistry.registerBlock(quartisCobbleMossy, Strings.QUARTISCOBBLEMOSSY_NAME);
+        GameRegistry.registerBlock(quartisBrickLarge, Strings.QUARTISBRICKLARGE_NAME);
+        GameRegistry.registerBlock(quartisBrickSmall, Strings.QUARTISBRICKSMALL_NAME);
+        GameRegistry.registerBlock(netherBrickLarge, Strings.NETHERSTONEBRICK_NAME);
+        GameRegistry.registerBlock(netherStone, Strings.NETHERSTONE_NAME);
+
+        MinecraftForge.setBlockHarvestLevel(aquaditeOre, "pickaxe", 2);
+        MinecraftForge.setBlockHarvestLevel(zarfronOre, "pickaxe", 2);
+        MinecraftForge.setBlockHarvestLevel(erieOre, "pickaxe", 2);
+    }
 }

@@ -13,16 +13,16 @@ import com.ironhammer354.mythic.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class NetherStoneBrick extends Block {
+public class QuartisCobble extends Block {
 
 	@SideOnly(Side.CLIENT)
 	public Icon[] icons;
 
-	public NetherStoneBrick(int id) {
+	public QuartisCobble(int id) {
 
 		super(id, Material.rock);
 		setCreativeTab(Mythic.tabMyth);
-		setUnlocalizedName(Strings.NETHERSTONEBRICK_NAME);
+		setUnlocalizedName(Strings.QUARTISCOBBLE_NAME);
 		setHardness(3.0F);
 		setResistance(8.0F);
 	}

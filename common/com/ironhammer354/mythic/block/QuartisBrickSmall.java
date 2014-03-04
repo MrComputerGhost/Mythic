@@ -13,16 +13,16 @@ import com.ironhammer354.mythic.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class QuartisSolidBlock extends Block {
+public class QuartisBrickSmall extends Block {
 
 	@SideOnly(Side.CLIENT)
 	public Icon[] icons;
 
-	public QuartisSolidBlock(int id) {
+	public QuartisBrickSmall(int id) {
 
 		super(id, Material.rock);
 		setCreativeTab(Mythic.tabMyth);
-		setUnlocalizedName(Strings.QUARTISSOLIDBLOCK_NAME);
+		setUnlocalizedName(Strings. QUARTISBRICKSMALL_NAME);
 		setHardness(3.0F);
 		setResistance(8.0F);
 	}

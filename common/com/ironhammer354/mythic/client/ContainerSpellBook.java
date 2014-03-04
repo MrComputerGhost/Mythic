@@ -7,13 +7,14 @@ import net.minecraft.world.World;
 
 public class ContainerSpellBook extends Container {
 
-	public ContainerSpellBook(InventoryPlayer par1InventoryPlayer, World par2World, int par3, int par4, int par5) {
-		
-	}
+    public ContainerSpellBook(InventoryPlayer par1InventoryPlayer, World par2World, int par3, int par4, int par5) {
 
-	@Override
-	public boolean canInteractWith(EntityPlayer entityplayer) {
+    }
 
-		return true;
-	}
+    @
+    Override
+    public boolean canInteractWith(EntityPlayer entityplayer) {
+
+        return true;
+    }
 }

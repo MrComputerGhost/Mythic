@@ -30,60 +30,65 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION)
-@NetworkMod(clientSideRequired = true, serverSideRequired = false)
+@
+Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION)@ NetworkMod(clientSideRequired = true, serverSideRequired = false)
 
 public class Mythic {
 
-	@Instance(Reference.MOD_ID)
-	public static Mythic instance;
+    @
+    Instance(Reference.MOD_ID)
+    public static Mythic instance;
 
-	@SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.COMMON_PROXY)
-	public static CommonProxy proxy;
+    @
+    SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.COMMON_PROXY)
+    public static CommonProxy proxy;
 
-	public static final CreativeTabs tabMyth = new TabMyth(CreativeTabs.getNextID(), Reference.MOD_ID);
+    public static final CreativeTabs tabMyth = new TabMyth(CreativeTabs.getNextID(), Reference.MOD_ID);
 
-	@EventHandler
-	public void preInit(FMLPreInitializationEvent e) {
-		
-		NetworkRegistry.instance().registerGuiHandler(instance, new GuiHandler());
+    @
+    EventHandler
+    public void preInit(FMLPreInitializationEvent e) {
 
-		ConfigurationHandler.init(new File(e.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.MOD_ID + File.separator + Reference.MOD_ID + ".cfg"));
-		
-		MythBlocks.initBlocks();
-		
-		MythItems.initItems();
-		
-		WorldGen.init();
-		
-		CraftingManager.addRecipes();
-		
-		SpawnEntityEggs.CreateSpawnEggs();
-		
-		proxy.registerSound();
-	}
+        NetworkRegistry.instance().registerGuiHandler(instance, new GuiHandler());
 
-	@EventHandler
-	public void init(FMLInitializationEvent e) {
+        ConfigurationHandler.init(new File(e.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.MOD_ID + File.separator + Reference.MOD_ID + ".cfg"));
 
-		 EntityRegistry.registerModEntity(EntityNymph.class, "Nypmh", 0, this, 80, 1, true);
-	     EntityRegistry.addSpawn(EntityNymph.class, 17, 2, 8, EnumCreatureType.creature,
-                    BiomeGenBase.forest, BiomeGenBase.river);
-		 LanguageRegistry.instance().addStringLocalization("entity.mythic.Nymph.name", "en_US","Nymph");
-		
-		proxy.registerRenderThings();
-		
-		addNames();
-		
-		oreRegistration();
-		
-		addOreRecipes();
-	}
-	
-	public static void addNames(){}
-	public static void oreRegistration(){}
-	public static void addOreRecipes(){}
+        MythBlocks.initBlocks();
 
-	@EventHandler
-	public void postInit(FMLPostInitializationEvent e) {}
+        MythItems.initItems();
+
+        WorldGen.init();
+
+        CraftingManager.addRecipes();
+
+        SpawnEntityEggs.CreateSpawnEggs();
+
+        proxy.registerSound();
+    }
+
+    @
+    EventHandler
+    public void init(FMLInitializationEvent e) {
+
+        EntityRegistry.registerModEntity(EntityNymph.class, "Nypmh", 0, this, 80, 1, true);
+        EntityRegistry.addSpawn(EntityNymph.class, 17, 2, 8, EnumCreatureType.creature,
+            BiomeGenBase.forest, BiomeGenBase.river);
+        LanguageRegistry.instance().addStringLocalization("entity.mythic.Nymph.name", "en_US", "Nymph");
+
+        proxy.registerRenderThings();
+
+        addNames();
+
+        oreRegistration();
+
+        addOreRecipes();
+    }
+
+    public static void addNames() {}
+    public static void oreRegistration() {}
+    public static void addOreRecipes() {}
+
+    @
+    EventHandler
+    public void postInit(FMLPostInitializationEvent e) {}
 }
