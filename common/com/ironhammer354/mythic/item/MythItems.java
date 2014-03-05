@@ -14,6 +14,8 @@ public class MythItems {
 	public static Item wandQuartz;
 	public static Item wandEnder;
 	public static Item wandFarie;
+	public static Item wandDark;
+	public static Item wandBoom;
 
 	public static void initItems() {
 
@@ -25,6 +27,8 @@ public class MythItems {
 		wandQuartz = new WandQuartz(ItemIDs.wandQuartzID);
 		wandEnder = new WandEnder(ItemIDs.wandEnderID);
 		wandFarie = new WandFarie(ItemIDs.wandFarieID);
+		wandDark = new WandDark(ItemIDs.wandDarkID);
+		wandBoom = new WandBoom(ItemIDs.wandBoomID);
 
 	}
 }

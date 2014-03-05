@@ -16,6 +16,8 @@ public class Strings {
     public static final String WANDQUARTZ_NAME = "wandQuartz";
     public static final String WANDENDER_NAME = "wandEnder";
     public static final String WANDFARIE_NAME = "wandFarie";
+    public static final String WANDDARK_NAME = "wandDark";
+    public static final String WANDBOOM_NAME = "wandBoom";
 
     public static final String MYTHDESK_NAME = "mythDesk";
     public static final String WITHERBLOCK_NAME = "witherBlock";
@@ -29,5 +31,6 @@ public class Strings {
     public static final String QUARTISBRICKSMALL_NAME = "quartisBrickSmall";
     public static final String NETHERSTONEBRICK_NAME = "netherBrickLarge";
     public static final String NETHERSTONE_NAME = "netherStone";
+    public static final String NETHERSTONEMOSSY_NAME = "netherStoneMossy";
 
 }
