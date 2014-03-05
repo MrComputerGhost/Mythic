@@ -16,6 +16,7 @@ public class BlockIDs {
     public static final int QUARTISBRICKSMALL_DEFAULT = 3012;
     public static final int NETHERSTONEBRICK_DEFAULT = 3013;
     public static final int NETHERSTONE_DEFAULT = 3014;
+    public static final int NETHERSTONEMOSSY_DEFAULT = 3015;
 
     public static int aquaditeOreID;
     public static int zarfronOreID;
@@ -31,4 +32,5 @@ public class BlockIDs {
     public static int quartisBrickSmallID;
     public static int netherBrickLargeID;
     public static int netherStoneID;
+    public static int netherStoneMossyID;
 }

@@ -4,6 +4,7 @@ package com.ironhammer354.mythic.entity.mob;
 import net.minecraft.entity.ai.*;
 import net.minecraft.entity.*;
 import net.minecraft.world.*;
+import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.player.*;
 import net.minecraft.item.*;
 

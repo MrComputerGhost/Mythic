@@ -10,6 +10,8 @@ public class ItemIDs {
 	public static final int WANDQUARTZ_DEFAULT = 13005;
 	public static final int WANDENDER_DEFAULT = 13006;
 	public static final int WANDFARIE_DEFAULT = 13007;
+	public static final int WANDDARK_DEFAULT = 13008;
+	public static final int WANDBOOM_DEFAULT = 13009;
 	
 	public static int spellBookID;
 	public static int zarfronID;
@@ -19,5 +21,7 @@ public class ItemIDs {
 	public static int wandQuartzID;
 	public static int wandEnderID;
 	public static int wandFarieID;
-
+	public static int wandDarkID;
+	public static int wandBoomID;
+	
 }

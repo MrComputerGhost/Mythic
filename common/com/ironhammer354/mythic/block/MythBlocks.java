@@ -28,6 +28,7 @@ public class MythBlocks {
     public static Block quartisBrickSmall;
     public static Block netherBrickLarge;
     public static Block netherStone;
+    public static Block netherStoneMossy;
 
     public static void initBlocks() {
 
@@ -45,6 +46,7 @@ public class MythBlocks {
         quartisBrickSmall = new QuartisBrickSmall(BlockIDs.quartisBrickSmallID);
         netherBrickLarge = new NetherBrickLarge(BlockIDs.netherBrickLargeID);
         netherStone = new NetherStone(BlockIDs.netherStoneID);
+        netherStoneMossy = new NetherStoneMossy(BlockIDs.netherStoneMossyID);
 
         //Registry
         GameRegistry.registerBlock(aquaditeOre, Strings.AQUADITEORE_NAME);
@@ -61,6 +63,7 @@ public class MythBlocks {
         GameRegistry.registerBlock(quartisBrickSmall, Strings.QUARTISBRICKSMALL_NAME);
         GameRegistry.registerBlock(netherBrickLarge, Strings.NETHERSTONEBRICK_NAME);
         GameRegistry.registerBlock(netherStone, Strings.NETHERSTONE_NAME);
+        GameRegistry.registerBlock(netherStoneMossy, Strings.NETHERSTONEMOSSY_NAME);
 
         MinecraftForge.setBlockHarvestLevel(aquaditeOre, "pickaxe", 2);
         MinecraftForge.setBlockHarvestLevel(zarfronOre, "pickaxe", 2);

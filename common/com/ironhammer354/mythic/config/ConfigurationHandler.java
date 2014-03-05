@@ -38,6 +38,7 @@ public class ConfigurationHandler {
             BlockIDs.quartisBrickSmallID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.QUARTISBRICKSMALL_NAME, BlockIDs.QUARTISBRICKSMALL_DEFAULT).getInt(BlockIDs.QUARTISBRICKSMALL_DEFAULT);
             BlockIDs.netherBrickLargeID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.NETHERSTONEBRICK_NAME, BlockIDs.NETHERSTONEBRICK_DEFAULT).getInt(BlockIDs.NETHERSTONEBRICK_DEFAULT);
             BlockIDs.netherStoneID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.NETHERSTONE_NAME, BlockIDs.NETHERSTONE_DEFAULT).getInt(BlockIDs.NETHERSTONE_DEFAULT);
+            BlockIDs.netherStoneMossyID = config.getBlock(Configuration.CATEGORY_BLOCK, Strings.NETHERSTONEMOSSY_NAME, BlockIDs.NETHERSTONEMOSSY_DEFAULT).getInt(BlockIDs.NETHERSTONEMOSSY_DEFAULT);
 
             ItemIDs.spellBookID = config.getItem(Configuration.CATEGORY_ITEM, Strings.SPELLBOOK_NAME, ItemIDs.SPELLBOOK_DEFAULT).getInt(ItemIDs.SPELLBOOK_DEFAULT);
             ItemIDs.zarfronID = config.getItem(Configuration.CATEGORY_ITEM, Strings.ZARFRON_NAME, ItemIDs.ZARFRON_DEFAULT).getInt(ItemIDs.ZARFRON_DEFAULT);
@@ -47,7 +48,9 @@ public class ConfigurationHandler {
             ItemIDs.wandQuartzID = config.getItem(Configuration.CATEGORY_ITEM, Strings.WANDQUARTZ_NAME, ItemIDs.WANDQUARTZ_DEFAULT).getInt(ItemIDs.WANDQUARTZ_DEFAULT);
             ItemIDs.wandEnderID = config.getItem(Configuration.CATEGORY_ITEM, Strings.WANDENDER_NAME, ItemIDs.WANDENDER_DEFAULT).getInt(ItemIDs.WANDENDER_DEFAULT);
             ItemIDs.wandFarieID = config.getItem(Configuration.CATEGORY_ITEM, Strings.WANDFARIE_NAME, ItemIDs.WANDFARIE_DEFAULT).getInt(ItemIDs.WANDFARIE_DEFAULT);
-
+            ItemIDs.wandDarkID = config.getItem(Configuration.CATEGORY_ITEM, Strings.WANDDARK_NAME, ItemIDs.WANDDARK_DEFAULT).getInt(ItemIDs.WANDDARK_DEFAULT);
+            ItemIDs.wandBoomID = config.getItem(Configuration.CATEGORY_ITEM, Strings.WANDBOOM_NAME, ItemIDs.WANDBOOM_DEFAULT).getInt(ItemIDs.WANDBOOM_DEFAULT);
+            
         } catch (Exception e) {
             FMLLog.log(Level.SEVERE, e, Reference.MOD_ID + " had a problem loading its configuration file.");
         } finally {
