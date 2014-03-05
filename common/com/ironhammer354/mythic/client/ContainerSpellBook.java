@@ -11,8 +11,7 @@ public class ContainerSpellBook extends Container {
 
     }
 
-    @
-    Override
+    @Override
     public boolean canInteractWith(EntityPlayer entityplayer) {
 
         return true;

@@ -1,10 +1,10 @@
 package com.ironhammer354.mythic.entity.mob;
 
-import com.ironhammer354.mythic.lib.MobIDs;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityEggInfo;
 import net.minecraft.entity.EntityList;
+
+import com.ironhammer354.mythic.lib.MobIDs;
 
 public class SpawnEntityEggs {
 

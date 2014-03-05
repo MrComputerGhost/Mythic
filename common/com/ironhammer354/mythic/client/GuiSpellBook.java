@@ -2,10 +2,7 @@ package com.ironhammer354.mythic.client;
 
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-
-import org.lwjgl.opengl.GL11;
 
 public class GuiSpellBook extends GuiContainer {
 
@@ -14,8 +11,7 @@ public class GuiSpellBook extends GuiContainer {
         super(new ContainerSpellBook(player.inventory, world, x, y, z));
     }
 
-    @
-    Override
+    @Override
     protected void drawGuiContainerForegroundLayer(int par1, int par2) {
 
     }
@@ -23,8 +19,7 @@ public class GuiSpellBook extends GuiContainer {
     /**
      * Draw the background layer for the GuiContainer (everything behind the items)
      */
-    @
-    Override
+    @Override
     protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
 
     }

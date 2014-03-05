@@ -30,23 +30,19 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
-@
-Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION)@ NetworkMod(clientSideRequired = true, serverSideRequired = false)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION)@ NetworkMod(clientSideRequired = true, serverSideRequired = false)
 
 public class Mythic {
 
-    @
-    Instance(Reference.MOD_ID)
+    @Instance(Reference.MOD_ID)
     public static Mythic instance;
 
-    @
-    SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.COMMON_PROXY)
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.COMMON_PROXY)
     public static CommonProxy proxy;
 
     public static final CreativeTabs tabMyth = new TabMyth(CreativeTabs.getNextID(), Reference.MOD_ID);
 
-    @
-    EventHandler
+    @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
 
         NetworkRegistry.instance().registerGuiHandler(instance, new GuiHandler());
@@ -66,8 +62,7 @@ public class Mythic {
         proxy.registerSound();
     }
 
-    @
-    EventHandler
+    @EventHandler
     public void init(FMLInitializationEvent e) {
 
         EntityRegistry.registerModEntity(EntityNymph.class, "Nypmh", 0, this, 80, 1, true);
@@ -88,7 +83,6 @@ public class Mythic {
     public static void oreRegistration() {}
     public static void addOreRecipes() {}
 
-    @
-    EventHandler
+    @EventHandler
     public void postInit(FMLPostInitializationEvent e) {}
 }

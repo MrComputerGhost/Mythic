@@ -34,8 +34,7 @@ public class ContainerMythDesk extends Container {
         }
     }
 
-    @
-    Override
+    @Override
     public boolean canInteractWith(EntityPlayer entityplayer) {
 
         return true;

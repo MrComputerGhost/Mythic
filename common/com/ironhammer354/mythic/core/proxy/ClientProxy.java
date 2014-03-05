@@ -9,16 +9,14 @@ import com.ironhammer354.mythic.rederer.entity.RenderNymphMob;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 
-public class ClientProxy extends CommonProxy {@
-    Override
+public class ClientProxy extends CommonProxy {
+	@Override
     public void registerRenderThings() {
-        RenderingRegistry.registerEntityRenderingHandler(EntityNymph.class, new RenderNymphMob(new ModelNymph(), 0.5F));
+        RenderingRegistry.registerEntityRenderingHandler(EntityNymph.class, new RenderNymphMob(new ModelNymph(), 0.25F));
         //the 0.5F is the shadowsize
     }
 
-    @
-    Override
-    public void registerSound() {
+    @Override public void registerSound() {
         MinecraftForge.EVENT_BUS.register(new EventSound()); //register the sound event handling class
     }
 }

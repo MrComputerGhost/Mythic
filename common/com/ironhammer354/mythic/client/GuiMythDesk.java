@@ -7,8 +7,6 @@ import net.minecraft.world.World;
 
 import org.lwjgl.opengl.GL11;
 
-import com.ironhammer354.mythic.lib.Reference;
-
 public class GuiMythDesk extends GuiContainer {
 
     public GuiMythDesk(EntityPlayer player, World world, int x, int y, int z) {
@@ -16,8 +14,7 @@ public class GuiMythDesk extends GuiContainer {
         // TODO Auto-generated constructor stub
     }
 
-    @
-    Override
+    @Override
     protected void drawGuiContainerForegroundLayer(int param1, int param2) {
         //draw text and stuff here
         //the parameters for drawString are: string, x, y, color
@@ -26,8 +23,7 @@ public class GuiMythDesk extends GuiContainer {
         fontRenderer.drawString(StatCollector.translateToLocal("container.inventory"), 8, ySize - 96 + 2, 4210752);
     }
 
-    @
-    Override
+    @Override
     protected void drawGuiContainerBackgroundLayer(float par1, int par2,
         int par3) {
         //draw your Gui here, only thing you need to change is the path

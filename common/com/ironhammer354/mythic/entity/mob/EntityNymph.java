@@ -1,12 +1,16 @@
 package com.ironhammer354.mythic.entity.mob;
 
-//Do Ctrl+Chift+O to clean this up.
-import net.minecraft.entity.ai.*;
-import net.minecraft.entity.*;
-import net.minecraft.world.*;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.EntityAIHurtByTarget;
+import net.minecraft.entity.ai.EntityAILookIdle;
+import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
+import net.minecraft.entity.ai.EntityAISwimming;
+import net.minecraft.entity.ai.EntityAIWander;
+import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.monster.EntityMob;
-import net.minecraft.entity.player.*;
-import net.minecraft.item.*;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraft.world.World;
 
 public class EntityNymph extends EntityMob {
 

@@ -3,8 +3,6 @@ package com.ironhammer354.mythic.block.rune;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.world.World;
 
 import com.ironhammer354.mythic.Mythic;
 import com.ironhammer354.mythic.lib.Reference;
