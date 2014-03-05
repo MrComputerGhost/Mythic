@@ -10,7 +10,7 @@ import net.minecraft.world.World;
 import com.ironhammer354.mythic.lib.Strings;
 
 public class WandBoom extends ItemMyth {
-
+//TheComputerGhost send this to me to add. 
 	public WandBoom(int id) {
 
 		super(id);
@@ -29,7 +29,8 @@ public class WandBoom extends ItemMyth {
         int j = MathHelper.floor_double(mop.hitVec.yCoord);
         int k = MathHelper.floor_double(mop.hitVec.zCoord);    
                
-        if(!world.isRemote) world.createExplosion(player, mop.hitVec.xCoord, mop.hitVec.yCoord, mop.hitVec.zCoord, 5, false); //Change last false to true if you want blocks to be damaged as well, otherwise leave that false.
+        if(!world.isRemote) world.createExplosion(player, mop.hitVec.xCoord, mop.hitVec.yCoord, mop.hitVec.zCoord, 5, false); 
+        //Change last false to true if you want blocks to be damaged as well, otherwise leave that false.
        
         return item;
       }
