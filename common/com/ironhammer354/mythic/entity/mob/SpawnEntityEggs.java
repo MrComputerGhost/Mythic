@@ -9,7 +9,7 @@ import com.ironhammer354.mythic.lib.MobIDs;
 public class SpawnEntityEggs {
 
     public static void CreateSpawnEggs() {
-        registerEntityEgg(EntityNymph.class, 0x522900, 0x339966, MobIDs.nymph);
+        registerEntityEgg(EntityNymph.class, 0x99FF66, 0xFFB894, MobIDs.nymph);
     }
 
     public static void registerEntityEgg(Class <? extends Entity > entity, int primaryColor, int secondaryColor, int eid) {

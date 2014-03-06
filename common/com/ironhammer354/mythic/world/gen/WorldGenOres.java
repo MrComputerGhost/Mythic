@@ -30,7 +30,9 @@ public class WorldGenOres implements IWorldGenerator {
         }
     }
 
-    private void generateNether(World world, Random random, int x, int z) {}
+    private void generateNether(World world, Random random, int x, int z) {
+    	addOreSpawn(MythBlocks.netherStoneMossy, Block.netherrack, world, random, x, z, 16, 16, 6 + random.nextInt(5), 10, 0, 100);
+    }
 
     private void genereateSurface(World world, Random random, int x, int z) {
 
@@ -40,7 +42,7 @@ public class WorldGenOres implements IWorldGenerator {
 
     private void generateEnd(World world, Random random, int x, int z) {
 
-        addOreSpawn(MythBlocks.erieOre, Block.whiteStone, world, random, x, z, 16, 16, 6 + random.nextInt(5), 10, 0, 100);
+        addOreSpawn(MythBlocks.erieOre, Block.whiteStone, world, random, x, z, 16, 16, 20 + random.nextInt(7), 10, 0, 100);
     }
 
     public void addOreSpawn(Block block, Block blockBeingReplaced, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chanceToSpawn, int minY, int maxY) {
