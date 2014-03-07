@@ -2,7 +2,7 @@
 ###Minecraft 1.6.4 | Version 0.0.0.0 DEV 
 
 ####***Description:***
-Mythic is a Minecraft modification that focuses on spell casting. It is still a woork in progress and has lots of planned features. The main developers are Ironhammer354 and MartijnWoudstra
+Adds magic to your world that allows you to cast spells and open portals to new worlds. Within these worlds there are new creatures, biomes, structures, and materials to be found. It also adds Magical Trinkets some of which can be crafted and other, more powerful ones, that must be found.
 
 ####***Links:***
 [Website](http://ironhammer354.com/mythic)
@@ -12,11 +12,10 @@ Mythic is a Minecraft modification that focuses on spell casting. It is still a 
 
 ####***Developers:***
 
-MartijnWoudstra[(Twitter)](http://twitter.com/MartijnWoudstra)
-
 Ironhammer354[(Twitter)](https://twitter.com/ironhammer354)
 
-Xetosphere[(Twitter)](https://twitter.com/Xetosphere)
+Special Thanks to MrComputerGhost & MartijnWoudstra
+
 
 
 ####Build Information:
